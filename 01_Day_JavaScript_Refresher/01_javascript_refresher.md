@@ -196,8 +196,8 @@ Now, you just wrote your first inline script. We can create a pop up alert messa
 
 #### Internal Script
 
-The internal script can be written in the _head_ or the _body_, but it is preferred to put it on the body of the HTML document.
-First, let us write on the head part of the page.
+The internal script can be written in the _head_ or the _body_, but it is preferred to put it in the body of the HTML document.
+First, let us write in the head part of the page.
 
 ```html
 <!DOCTYPE html>
@@ -264,8 +264,8 @@ External scripts in the _body_:
     <title>30DaysOfJavaScript:External script</title>
   </head>
   <body>
-    //it could be in the header or in the body // Here is the recommended place
-    to put the external script
+    //it could be in the header or in the body
+    // It is recommended to place external scripts here
     <script src="introduction.js"></script>
   </body>
 </html>
