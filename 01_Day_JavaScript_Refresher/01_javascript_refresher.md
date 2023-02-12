@@ -161,7 +161,7 @@
       - [Exercises Level 1](#exercises-level-1-3)
       - [Exercises Level 2](#exercises-level-2-3)
       - [Exercises Level 3](#exercises-level-3-3)
-  - [13 Document Object Model(DOM)](#13-document-object-modeldom)
+  - [13 Document Object Model (DOM)](#13-document-object-model-dom)
 
 ## JavaScript Refresher
 
@@ -3678,7 +3678,7 @@ Let us find the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.find((country) => country.includes('o'))
-console.log(index // Estonia
+console.log(index) // Estonia
 ```
 
 #### 6. findIndex
@@ -3717,7 +3717,7 @@ Let us find the index of the first country in the array which has exactly six ch
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.length === 6)
-console.log(index //2
+console.log(index) //2
 ```
 
 Let us find the index of the first country in the array which has the letter 'o'.
@@ -3725,7 +3725,7 @@ Let us find the index of the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.includes('o'))
-console.log(index // 1
+console.log(index) // 1
 ```
 
 Let us move on to the next functional programming, some.
@@ -3888,7 +3888,7 @@ console.log(person)
 ```
 
 ```sh
-Person {firstName: undefined, lastName}
+Person {firstName: undefined, lastName: undefined}
 ```
 
 All the keys of the object are undefined. When ever we instantiate we should pass the value of the properties. Let us pass value at this time when we instantiate the class.
@@ -4020,7 +4020,7 @@ console.log(person2.getFullName())
 
 ```sh
 Asabeneh Yetayeh
-test.js:19 Lidiya Tekle
+Lidiya Tekle
 ```
 
 #### Properties with initial value
@@ -4065,7 +4065,7 @@ A method could be regular method or a getter or a setter. Let us see, getter and
 
 #### getter
 
-The get method allow us to access value from the object. We write a get method using keyword _get_ followed by a function. Instead of accessing properties directly from the object we use getter to get the value. See the example bellow
+The get method allow us to access value from the object. We write a get method using keyword _get_ followed by a function. Instead of accessing properties directly from the object we use getter to get the value. See the example below
 
 ```js
 class Person {
@@ -4204,7 +4204,7 @@ class Person {
         ` and ${this.skills[this.skills.length - 1]}`
     let formattedSkills = skills ? `He knows ${skills}` : ''
 
-    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
+    let info = `${fullName} is ${this.age}. He lives in ${this.city}, ${this.country}. ${formattedSkills}`
     return info
   }
 }
@@ -4457,13 +4457,12 @@ console.log('Count:', statistics.count()) // 25
 console.log('Sum: ', statistics.sum()) // 744
 console.log('Min: ', statistics.min()) // 24
 console.log('Max: ', statistics.max()) // 38
-console.log('Range: ', statistics.range() // 14
+console.log('Range: ', statistics.range()) // 14
 console.log('Mean: ', statistics.mean()) // 30
 console.log('Median: ',statistics.median()) // 29
 console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
 console.log('Variance: ',statistics.var()) // 17.5
 console.log('Standard Deviation: ', statistics.std()) // 4.2
-console.log('Variance: ',statistics.var()) // 17.5
 console.log('Frequency Distribution: ',statistics.freqDist()) // [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
 
@@ -4483,13 +4482,13 @@ Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
 
-### 13 Document Object Model(DOM)
+### 13 Document Object Model (DOM)
 
-HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help us to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript.
+HTML document is structured as a JavaScript Object. Every HTML element has different properties which can help us to manipulate them. It is possible to get, create, append or remove HTML elements using JavaScript.
 
-When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of update all necessary changes.
+When it comes to React we do not directly manipulate the DOM instead React Virtual DOM will take care of updating all necessary changes.
 
-So do not directly manipulate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to know DOM very well to use react but recommended to know.
+So do not directly manipulate the DOM if you are using react. The only place we directly touch the DOM is here at the index.html. React is a single page application because all the components will be rendered on the index.html page and there will not be any other HTML in the entire React Application. You don't have to understand the DOM very well to use react but it is recommended.
 
 ```html
 <!DOCTYPE html>
@@ -4514,7 +4513,7 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 </html>
 ```
 
-Check out there result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
+Check out the result on [codepen](https://codepen.io/Asabeneh/full/vYGqQxP)
 
 🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive into React.
 
